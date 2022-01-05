@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Clothes } from './Clothes';
+import { ModernClothes } from './ModernClothes'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export function App () {
+  return(
+    <div id="app">
+      <h2>Welcome to my page</h2>
+    <p><h7><b><u>Available clothes</u></b></h7></p>
+    <ModernClothes availability={true}/>
+    
+    
+</div>
+  )
 }
 
 export default App;
